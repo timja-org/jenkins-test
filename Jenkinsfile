@@ -1,10 +1,14 @@
 pipeline {
-    agent any
-    stages {
-        stage('Example Build') {
-            steps {
-                echo 'hi'
-            }
-        }
+  agent any
+  stages {
+    stage('Example Build') {
+      agent any
+      environment {
+        hi = 'value'
+      }
+      steps {
+        echo 'hi'
+      }
     }
+  }
 }
