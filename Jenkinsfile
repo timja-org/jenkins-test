@@ -1,9 +1,3 @@
-node {
-  stage('Checkout') {
-   checkout scm
-  }
-  
-  stage('Hi') {
-    echo 'hi'
-  }
+pipeline {
+    /* insert Declarative Pipeline here */
 }
