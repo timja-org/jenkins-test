@@ -8,6 +8,7 @@ pipeline {
       }
       steps {
         echo 'hi'
+        slackSend(channel: 'tim-testing', message: 'Hi')
       }
     }
   }
