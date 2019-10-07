@@ -4,7 +4,7 @@ pipeline {
     stage('Example Build') {
       agent any
       environment {
-        hi = 'value'
+        hi = 'value' 
       }
       steps {
         sh "env"
