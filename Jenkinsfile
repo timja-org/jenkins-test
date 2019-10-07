@@ -7,7 +7,7 @@ pipeline {
         hi = 'value'
       }
       steps {
-        sh "env"
+        sh "env | egrep 'GIT|CHANGE'"
       }
     }
   }
