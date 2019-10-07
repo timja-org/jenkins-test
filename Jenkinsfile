@@ -7,8 +7,7 @@ pipeline {
         hi = 'value'
       }
       steps {
-        echo 'hi'
-        slackSend(channel: 'tim-testing', message: 'Hi')
+        sh "env"
       }
     }
   }
